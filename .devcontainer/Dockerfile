@@ -36,6 +36,7 @@ RUN : \
     python3 \
     python3-venv \
     python3-crcmod \
+    qemu-system-arm \
     ruby \
     sudo \
     unzip \
