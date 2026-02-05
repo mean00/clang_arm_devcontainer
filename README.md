@@ -8,11 +8,11 @@ By default it will pull HEAD, but you can just checkout the version you want in 
 
 # Howto :
 
-git submodule update --init
-devpod up . --ide none --devcontainer-path .devcontainer/devcontainer.json
-mkdir build
-cd build
-cmake ..
-make -j 8
-make toolchain
-make package-llvm-toolchain
+  git submodule update --init
+  devpod up . --ide none --devcontainer-path .devcontainer/devcontainer.json
+  mkdir build
+  cd build
+  cmake ..
+  make -j 8
+  make toolchain
+  make package-llvm-toolchain
