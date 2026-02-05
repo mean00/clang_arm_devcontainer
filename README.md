@@ -7,12 +7,13 @@ on ubuntu 24.04
 By default it will pull HEAD, but you can just checkout the version you want in the arm-toolchain folder
 
 # Howto :
-
-  git submodule update --init
-  devpod up . --ide none --devcontainer-path .devcontainer/devcontainer.json
-  mkdir build
-  cd build
-  cmake ..
-  make -j 8
-  make toolchain
-  make package-llvm-toolchain
+ ```bash
+git submodule update --init
+devpod up . --ide none --devcontainer-path .devcontainer/devcontainer.json
+ssh llvmarmdevcontainer.devpod
+mkdir build
+cd build
+cmake ..
+make -j 8
+make toolchain
+make package-llvm-toolchain
